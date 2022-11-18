@@ -3,7 +3,7 @@ install:
 		pip install -r requirements.txt
 
 test:
-	pytest -vv --cov=src testing/
+	python -m pytest -vv --cov=src testing/
 
 format:
 	black *.py
