@@ -6,9 +6,9 @@ test:
 	python -m pytest -vv --cov=src testing/
 
 format:
-	black *.py
+	black .
 
 lint: 
 	pylint --disable=R,C $$(git ls-files '*.py')
 
-all: install lint tests format
+all: install lint test format
