@@ -1,3 +1,5 @@
+[![Github build](https://github.com/iklymchuk/pytest-project-setup/actions/workflows/github-build.yml/badge.svg)](https://github.com/iklymchuk/pytest-project-setup/actions/workflows/github-build.yml)
+
 # pytest-project-setup
 This is a pytest project setup
 
