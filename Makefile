@@ -2,8 +2,8 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
-tests:
-	python -m pytest -vv 
+test:
+	python -m pytest -vv --cov=src
 
 format:
 	black *.py
