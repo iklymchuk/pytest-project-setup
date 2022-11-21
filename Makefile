@@ -5,6 +5,12 @@ install:
 test:
 	python -m pytest -vv --cov=src testing/
 
+parallel-test:
+	python -m pytest -n auto -vv --cov=src testing/ 
+
+profile-test-code:
+	python -m pytest -vv --durations=10 --durations-min=1.0
+
 format:
 	black .
 
