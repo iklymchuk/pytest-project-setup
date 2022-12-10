@@ -3,7 +3,7 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --cov=src testing/
+	python -m pytest -vv --cov=src testing/ -m "skip_agnostic"
 
 parallel-test:
 	python -m pytest -n auto -vv --cov=src testing/ 
